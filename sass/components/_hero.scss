@@ -1,33 +1,77 @@
 .hero {
 
     display: block;
-    max-width: 1600px;
-    min-width: 1200px;
-    padding-top: 200px;
-    padding-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
+    
     background-image: linear-gradient(to right,rgba(47, 48, 58, 0.3),  rgba(47, 48, 58, 0.3)), url(./../images/Heade.jpg);
     background-color: $hero-back-color;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @media screen and ( min-width: 480px ) and (max-width:479px) {
+        width: 100%;
+        padding-top: 118px;
+        padding-bottom: 118px;
+
+     }
+     @media screen and (min-width: 768px) {
+         width: 100%;
+         padding-top: 118px;
+         padding-bottom: 118px;
+     }
+     @media screen and (min-width: 1200px) {
+         max-width: 1600px;
+        // width: 1200px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        }
+        
+    
+
 
     &-item {
         display: block;
-        width: 696px;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 45px;
-        padding-right: 45px;
         color: $white-color;
         font-family: Roboto;
         font-style: normal;
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 60px;
         text-align: center;
+        line-height: 42px;
         text-transform: uppercase;
+        
+
+        @media screen and ( min-width: 480px ) {
+            width: 390px;
+            font-weight: 900;
+            font-size: 26px;
+           
+            letter-spacing: 0.06em;    
+         }
+         @media screen and (min-width: 768px) {
+            width: 390px;
+            font-weight: 900;
+            font-size: 26px;
+           
+            letter-spacing: 0.06em;  
+         }
+         @media screen and (min-width: 1200px) {
+            width: 696px;
+
+            padding-left: 45px;
+            padding-right: 45px;
+            letter-spacing: 0.06em; 
+
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 60px;
+
+            }
+       
     }
 
     &-button {

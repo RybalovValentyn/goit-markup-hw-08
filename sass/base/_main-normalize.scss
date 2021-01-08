@@ -20,13 +20,11 @@ body {
     font-family: roboto ,sans-serif;
 }
 .container {
-    display: flex;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-        }
+    margin-left: auto;
+    margin-right: auto;
+}
 h2 {
     // display: block;
     // align-content: center;
@@ -51,15 +49,15 @@ h3 {
     color: $white-color;
 
 }
-h4 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $link-color;
+// h4 {
+//     font-family: Roboto;
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 19px;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     color: $link-color;
 
-}
+// }
 
