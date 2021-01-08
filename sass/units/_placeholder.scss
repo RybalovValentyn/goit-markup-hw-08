@@ -1,0 +1,38 @@
+%body {
+    background-color: red;
+}
+%logo-font {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 30px;
+}
+%button-header {
+    font-family: Roboto;
+     font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+.last-chield {
+    margin-right: 0;
+}
+
+
+%button-text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $link-color-origin;
+    color: $white-color;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    border-radius:  4px;
+    border: none;
+}

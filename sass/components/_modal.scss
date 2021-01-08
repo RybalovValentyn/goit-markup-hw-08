@@ -1,0 +1,199 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+   
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+.modal {
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    width: 528px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color:$white-color;
+    padding: 8px 8px 40px 40px;
+    
+    
+}
+.modal-btn {
+    display: inline-flex;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    padding: 9px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        fill: $link-color-origin;
+    }
+}
+.form-container {
+    margin-right: 32px;
+    position: relative;
+}
+.form {
+    p {
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 2px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.03em;
+    }
+}
+.form-label {
+    display: block;
+    margin-bottom: 4px;
+    margin-top: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: $text-color;
+
+}
+.form-input {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    padding-left: 35px;
+    border: 1px solid rgba(33, 33, 33, 0.2) ;
+    border-radius: 4px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+
+    &:focus +.modal-ikon {
+        fill: $link-color-origin;
+            }
+    &:focus {
+        border: 1px solid $link-color-origin;
+        outline: none;
+    }
+}
+.modal-ikon {
+    position: absolute;
+    left: 15px;
+    bottom: calc(50% - 15px);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+textarea {
+    display: block;
+    margin-bottom: 20px;
+    // width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+
+    &:focus {
+        border: 1px solid $link-color-origin;
+        outline: none;
+    }
+}
+.checkbox {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+
+        & a {
+         color: $link-color-origin;
+         text-decoration: underline;
+    }
+}
+.check {
+    margin-right: 7px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+
+    &:checked ~ .icon-check {
+        background-image: url(../../images/check.svg);
+        background-position: center;
+        background-size: contain;
+        border: 2px solid #2196F3;
+        outline: #2196F3;
+        background-origin: border-box;
+    }
+    &:focus:checked ~ .icon-check {
+        background-image: url(../../images/check.svg);
+        background-position: center;
+        background-size: contain;
+        border: 2px solid #2196F3;
+        outline: #2196F3;
+        background-origin: border-box;
+    }
+
+
+
+}
+.icon-check {
+    position: absolute;
+    left: 20px;
+    top: 3px;
+    display: block;
+    height: 15px;
+    width: 16px;
+    border: 2px solid $link-color;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    transition-property: background-image;
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+.button-modal-box {
+    display: flex;
+    align-items: center;
+}
+
+.button-modal-submit {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 55px;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    background-color: $link-color-origin;
+}
