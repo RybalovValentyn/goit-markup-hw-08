@@ -1,15 +1,24 @@
-.section-work {
+.section-work 
+{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+@media screen and (max-width: 1199px){
+    display: none;
+}  
+
     background-color: $white-color;
-    padding-bottom: 94px;
+    padding: 94px 15px;
     }
 .working-box {
-  margin-top: 50px;
-
-}
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
 .working-item {
     position: relative;
-    margin-right: 30px;
     height: 294px;
+    width: 370px;
 }
 .working-solution {
     position: absolute;

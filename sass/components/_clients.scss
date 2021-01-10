@@ -1,20 +1,99 @@
 .sektion-klient {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    h2 {
+        @media screen and (max-width: 1199px){
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 33px;
+        letter-spacing: 0.03em;}}
+
 }
+
 .klient {
-    margin-top: 50px;
-    &-item {
-        margin-right: 30px;
+        @media screen and (max-width: 479px) {
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;  
     }
+    @media screen and(min-width: 480px) and (max-width: 767px){
+         width: 100%;
+         margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;  }
+
+    @media screen and(min-width: 768px) and (max-width:1199px){
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;  
+         }
+    @media screen and (min-width: 1200px){
+        // width: 100%;
+        margin-top: 35px;
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+    }
+}
+.klient-item{
+    @media screen and (max-width: 479px) {
+        width: 100%;
+        width: (calc(100% / 2 - 30px));
+        margin: 15px;
+    }
+    @media screen and(min-width: 480px) and (max-width: 767px){
+        width: 100%;
+        width: (calc(100% / 2 - 30px));
+         margin: 15px;
+   }
+   @media screen and(min-width: 768px) and (max-width:1199px){
+         width: 768px;
+         width: (calc(100% / 3 - 30px));
+         margin: 15px;
+   }
+   @media screen and (min-width: 1200px){
+         width: 1200px;
+         width: (calc(100% / 6 - 30px));
+                  margin: 15px;
+                  margin-bottom: 0;
+                  &:first-child {
+                      margin-left: 0;
+                  }
+                  &:last-child {
+                    margin-right: 0;
+                }
+   }
 
 }
 .klient-link {
+    @media screen and (max-width: 479px) {
+        width: 100%;
+     }
+    @media screen and(min-width: 480px) and (max-width: 768px){
+        width: 100%;
+        max-width: 480px;
+    }
+    @media screen and(min-width: 768px) and (max-width:1199px){
+        width: 100%;
+        max-width: 480px;
+        
+       
+   }
+    @media screen and (min-width: 1200px){
+        width: 100%;
+        max-width: 480px;
+
+        
+        }
+    
     display: flex;
-    width: 170px;
+    // width: 170px;
     height: 90px;
     border: 1px solid $icon-fill;
-    box-sizing: border-box;
+    // box-sizing: border-box;
     border-radius: 4px;
     align-items: center;
     justify-content: center;
