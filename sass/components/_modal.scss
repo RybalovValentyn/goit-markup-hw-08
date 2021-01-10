@@ -6,7 +6,9 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
-
+    @media screen and (max-width: 527px) and (max-height: 625px) {
+    overflow: scroll;
+    }
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .is-hidden {
@@ -16,6 +18,16 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .modal {
+    @media screen and (max-width: 767px){
+        width: 100%;
+        max-width: 528px;
+        overflow: auto;
+        // max-height: 100%;
+    }
+    @media screen and (max-width: 527px) {
+        position: absolute;
+
+    }
     position: absolute;
     display:flex;
     flex-direction: column;
@@ -49,6 +61,11 @@
     position: relative;
 }
 .form {
+    @media screen and (max-width: 528px){
+        p {
+            text-align: center;
+        }
+    }
     p {
         display: inline-block;
         margin-top: 0;
