@@ -2,15 +2,58 @@
     background-color: $white-color;
 
 
-}
-.advantage {
-    padding-top: 94px;
-    padding-bottom: 94px;
 
 }
-.advantage-list {
-    width: 270px;
-    margin-right: 30px;
+.advantage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 479px) {
+        width: 100%;
+        padding: 30px 15px; 
+    }
+    @media screen and(min-width: 480px) and (max-width: 767px){
+        width: 480px;
+        padding: 30px 15px;        
+    }
+    @media screen and(min-width: 768px) and (max-width:1199px){
+        width: 768px;
+        padding: 30px 0px; 
+        margin: -15px 0px; 
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: wrap;                  
+    }
+    @media screen and (min-width: 1200px){
+        width: 1200px;
+        padding: 30px 0px; 
+        margin: -15px 0px; 
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+.advantage-list {       
+    @media screen and (max-width: 479px) {
+        width: 100%;
+        min-width: 270px;
+        margin: 30px 0px;
+    }
+    @media screen and(min-width: 480px) and (max-width: 767px){
+        width: 100%;
+        margin: 30px 0px;
+    }
+    @media screen and(min-width: 768px) and (max-width:1199px){
+        margin: 15px;
+        width: (calc(100% / 2 - 30px)) ;
+         }
+    @media screen and (min-width: 1200px){
+        margin: 15px;
+        width: (calc(100% /4 - 30px)) ;
+    }
 }
 .advantage-list-icon {
     height: 120px;
@@ -20,12 +63,19 @@
     justify-content: center;
     border-radius: 4px;
     margin-bottom: 30px;
-
+    @media screen and (max-width: 479px) {
+    width: 100%;
+    
 }
 .advantage-icon {
     display: inline-block;
 }
 .advantage-item {
+    @media screen and (max-width: 767px) {
+        display: block;
+        text-align: center;
+    }
+
     font-family: Roboto;
     color: $link-color;
     font-style: normal;
