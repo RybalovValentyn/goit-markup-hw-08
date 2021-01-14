@@ -1733,7 +1733,7 @@ textarea:focus {
 }
 
 .check:checked ~ .icon-check {
-  background-image: url(../../images/check.svg);
+  background-image: url(./../images/check.svg);
   background-position: center;
   background-size: contain;
   border: 2px solid #2196F3;
@@ -1742,7 +1742,7 @@ textarea:focus {
 }
 
 .check:focus:checked ~ .icon-check {
-  background-image: url(../../images/check.svg);
+  background-image: url(./../images/check.svg);
   background-position: center;
   background-size: contain;
   border: 2px solid #2196F3;
