@@ -1142,6 +1142,8 @@ h3 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .social-link-icon {
@@ -1671,9 +1673,15 @@ h3 {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-text-container {
+  display: block;
+  margin-right: 32px;
+}
+
 textarea {
   display: block;
   margin-bottom: 20px;
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 16px;
@@ -1684,7 +1692,16 @@ textarea:focus {
   outline: none;
 }
 
+.check-containetr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .checkbox {
+  padding-left: 32px;
   position: relative;
   display: block;
   text-align: center;
@@ -1730,13 +1747,14 @@ textarea:focus {
   background-size: contain;
   border: 2px solid #2196F3;
   outline: #2196F3;
+  background-color: #2196F3;
   background-origin: border-box;
 }
 
 .icon-check {
   position: absolute;
-  left: 20px;
-  top: 3px;
+  left: 12px;
+  top: 4px;
   display: block;
   height: 15px;
   width: 16px;
