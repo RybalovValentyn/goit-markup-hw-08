@@ -35,6 +35,11 @@
 
        }
 }
+.icon-close {
+   &:focus {
+        fill: $link-color-origin;
+    }
+}
 
 .main-nav-button {
     display: inline-flex;
@@ -47,7 +52,6 @@
     padding: 0;
     align-items: center;
     background-color: transparent;
-    // background-color: blue;
     outline: none;
     border: none;
     &:focus {
@@ -68,7 +72,7 @@
         display: none;
     }
     @media screen and ( min-width: 768px ) {
-display: none;
+    display: none;
      }
 }
 
