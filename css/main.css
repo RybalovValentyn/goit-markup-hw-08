@@ -758,6 +758,75 @@ h3 {
   padding-bottom: 118px;
 }
 
+@media screen and (max-width: 479px) {
+  .hero {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1), screen and (max-width: 479px) and (min-resolution: 1dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.3)), to(rgba(47, 48, 58, 0.3))), url(./../images/Header-imgmobi1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.3)), url(./../images/Header-imgmobi1x.jpg);
+  }
+}
+
+@media screen and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 479px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.3)), to(rgba(47, 48, 58, 0.3))), url(./../images/Header-imgmobi2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.3)), url(./../images/Header-imgmobi2x.jpg);
+  }
+}
+
+@media screen and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 479px) and (min-resolution: 3dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.3)), to(rgba(47, 48, 58, 0.3))), url(./../images/Header-imgmobi3x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.3)), url(./../images/Header-imgmobi3x.jpg);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 1dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.3)), to(rgba(47, 48, 58, 0.3))), url(./../images/Header-imgtab1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.3)), url(./../images/Header-imgtab1x.jpg);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.3)), to(rgba(47, 48, 58, 0.3))), url(./../images/Header-imgtab2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.3)), url(./../images/Header-imgtab2x.jpg);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 3dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.3)), to(rgba(47, 48, 58, 0.3))), url(./../images/Header-imgtab3x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.3)), url(./../images/Header-imgtab3x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-width: 768px) and (min-resolution: 1dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.3)), to(rgba(47, 48, 58, 0.3))), url(./../images/Imgdesk1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.3)), url(./../images/Imgdesk1x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.3)), to(rgba(47, 48, 58, 0.3))), url(./../images/Imgdesk2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.3)), url(./../images/Imgdesk2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 768px) and (min-resolution: 3dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.3)), to(rgba(47, 48, 58, 0.3))), url(./../images/Imgdesk3x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.3)), url(./../images/Imgdesk3x.jpg);
+  }
+}
+
 @media screen and (min-width: 480px) and (max-width: 479px) {
   .hero {
     width: 100%;

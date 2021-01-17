@@ -5,7 +5,43 @@
     margin-right: auto;
     
     background-image: linear-gradient(to right,rgba(47, 48, 58, 0.3),  rgba(47, 48, 58, 0.3)), url(./../images/Heade.jpg);
-    background-color: $hero-back-color;
+    @media screen and (max-width: 479px) {
+        width: 100%;
+        @media (min-resolution: 1dppx) {
+            background-image: linear-gradient(to right,rgba(47, 48, 58, 0.3),  rgba(47, 48, 58, 0.3)), url(./../images/Header-imgmobi1x.jpg)
+        }
+        @media (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,rgba(47, 48, 58, 0.3),  rgba(47, 48, 58, 0.3)), url(./../images/Header-imgmobi2x.jpg)
+        }
+        @media (min-resolution: 3dppx) {
+            background-image: linear-gradient(to right,rgba(47, 48, 58, 0.3),  rgba(47, 48, 58, 0.3)), url(./../images/Header-imgmobi3x.jpg)
+        }
+       
+        }
+        @media screen and(min-width: 480px) and (max-width: 767px){
+            @media (min-resolution: 1dppx) {
+                background-image: linear-gradient(to right,rgba(47, 48, 58, 0.3),  rgba(47, 48, 58, 0.3)), url(./../images/Header-imgtab1x.jpg)
+            }
+            @media (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right,rgba(47, 48, 58, 0.3),  rgba(47, 48, 58, 0.3)), url(./../images/Header-imgtab2x.jpg)
+            }
+            @media (min-resolution: 3dppx) {
+                background-image: linear-gradient(to right,rgba(47, 48, 58, 0.3),  rgba(47, 48, 58, 0.3)), url(./../images/Header-imgtab3x.jpg)
+            }
+        }
+        @media screen and(min-width: 768px) {
+            @media (min-resolution: 1dppx) {
+                background-image: linear-gradient(to right,rgba(47, 48, 58, 0.3),  rgba(47, 48, 58, 0.3)), url(./../images/Imgdesk1x.jpg)
+            }
+            @media (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right,rgba(47, 48, 58, 0.3),  rgba(47, 48, 58, 0.3)), url(./../images/Imgdesk2x.jpg)
+            }
+            @media (min-resolution: 3dppx) {
+                background-image: linear-gradient(to right,rgba(47, 48, 58, 0.3),  rgba(47, 48, 58, 0.3)), url(./../images/Imgdesk3x.jpg)
+            }  
+        }
+  
+     background-color: $hero-back-color;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
