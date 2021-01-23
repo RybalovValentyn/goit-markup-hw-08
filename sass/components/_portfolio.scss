@@ -1,16 +1,36 @@
 .portfolio-project {
     background-color: $white-color;}
+    
 .port-list {
     
         display: flex; 
         justify-content: center;  
         border-top: 1px solid #ECECEC;
-        padding-top: 93px;
-        padding-bottom: 56px;
         padding-left: 0;
+        padding-right: 0;
         margin: 0;
         margin-left: auto;
         margin-right: auto;
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            padding-top: 60px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 30px;
+            margin: 0;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            }
+            @media screen and(min-width: 768px) and (max-width:1199px){
+                width: 768px;
+                padding-bottom: 30px;
+          }
+            
+            @media screen and (min-width: 1200px){
+            width: 1200px;
+            padding-top: 93px;
+            padding-bottom: 56px;
+            }
     }
 
 .button-radio {
@@ -44,18 +64,43 @@ border: none;}
 }
 
 .works-list {
+    display: flex;
     flex-wrap: wrap;
-    padding: 0;
     margin-top: 0;
-    margin-bottom: 94px;
-}
+    padding-top: 0;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 479px) {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 60px;
+        }
+     @media screen and(min-width: 480px) and (max-width: 767px){
+              width: 480px;
+             & li:first-child {
+                margin-top: 0;
+            }
+            & li:last-child {
+                margin-bottom: 0;
+            }
+        }
+    @media screen and(min-width: 768px) and (max-width:1199px){
+              width: 768px;
+              padding-top: 0;
+        }
+        @media screen and (min-width: 1200px){
+            width: 1200px;
+            }
+  }
 .works {
     display: block;
     height: 404px;
-    width: 370px;
+    // width: 370px;
     transition-property: box-shadow ;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     h2{
         display: inline-block;
         margin-top: 20px;
@@ -89,25 +134,54 @@ border: none;}
     &:focus .overlay {
         bottom: 0;
     }
+
 }
 .work-link {
     margin: 15px;
-
    height: 404px;
-   width: 370px;
    border: 1px solid #EEEEEE;
+
+   @media screen and (max-width: 479px) {
+    width: 100%;
+    max-width: 450px;
+    margin-left: 0;
+    margin-right: 0;
+    }
+    @media screen and(min-width: 480px) and (max-width: 767px){
+        width: 100%;
+        max-width: 450px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @media screen and(min-width: 768px) and (max-width:1199px){
+        width: calc(100%/2 - 30px);
+          
+    }
+    @media screen and (min-width: 1200px){
+        width: calc(100%/3 - 30px);
+    }
+
 }
+
 .work-img {
     display: block;
     position: relative;
     height: 294px;
-    width: 370px;
+    // width: auto;
+    width: 100%;
     background-color: crimson;
     overflow: hidden;
 
     &:hover .overlay {
         bottom: 0;
+    } 
+    &:focus .overlay {
+        bottom: 0;
     }
+    & img {
+        width: 100%;
+    }
+
 
 }
 .overlay {

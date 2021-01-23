@@ -1733,12 +1733,42 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   border-top: 1px solid #ECECEC;
-  padding-top: 93px;
-  padding-bottom: 56px;
   padding-left: 0;
+  padding-right: 0;
   margin: 0;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .port-list {
+    width: 100%;
+    padding-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    margin: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .port-list {
+    width: 768px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .port-list {
+    width: 1200px;
+    padding-top: 93px;
+    padding-bottom: 56px;
+  }
 }
 
 .button-radio {
@@ -1776,17 +1806,54 @@ footer {
 }
 
 .works-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0;
   margin-top: 0;
-  margin-bottom: 94px;
+  padding-top: 0;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 479px) {
+  .works-list {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .works-list {
+    width: 480px;
+  }
+  .works-list li:first-child {
+    margin-top: 0;
+  }
+  .works-list li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .works-list {
+    width: 768px;
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .works-list {
+    width: 1200px;
+  }
 }
 
 .works {
   display: block;
   height: 404px;
-  width: 370px;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -1839,21 +1906,58 @@ footer {
 .work-link {
   margin: 15px;
   height: 404px;
-  width: 370px;
   border: 1px solid #EEEEEE;
+}
+
+@media screen and (max-width: 479px) {
+  .work-link {
+    width: 100%;
+    max-width: 450px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .work-link {
+    width: 100%;
+    max-width: 450px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .work-link {
+    width: calc(100%/2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work-link {
+    width: calc(100%/3 - 30px);
+  }
 }
 
 .work-img {
   display: block;
   position: relative;
   height: 294px;
-  width: 370px;
+  width: 100%;
   background-color: crimson;
   overflow: hidden;
 }
 
 .work-img:hover .overlay {
   bottom: 0;
+}
+
+.work-img:focus .overlay {
+  bottom: 0;
+}
+
+.work-img img {
+  width: 100%;
 }
 
 .overlay {
