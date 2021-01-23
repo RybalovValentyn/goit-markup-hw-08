@@ -1196,8 +1196,11 @@ h3 {
   height: auto;
 }
 
-.proffesion h4 {
+.proffesion {
   text-align: center;
+}
+
+.proffesion h4 {
   margin-top: 30px;
   margin-bottom: 10px;
 }
@@ -1206,25 +1209,27 @@ h3 {
   margin-top: 0;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
-.proffesion .social {
+.proffesion .social-team {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 32px;
-  padding-right: 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .social-link-icon {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-item {
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .social-link {
@@ -1469,8 +1474,9 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
@@ -1525,7 +1531,6 @@ footer {
 
 .social-link-footer {
   background-color: #2F303A;
-  width: 206px;
 }
 
 @media screen and (max-width: 479px) {
@@ -1561,12 +1566,9 @@ footer {
 }
 
 .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-right: -5px;
   margin-left: -5px;
 }

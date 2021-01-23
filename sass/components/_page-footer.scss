@@ -31,7 +31,7 @@ footer {
     @media screen and(min-width: 768px) and (max-width:1199px){
         width: 768px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
   }
   @media screen and (min-width: 1200px){
      display: inline-flex
@@ -77,7 +77,7 @@ footer {
 }
 .social-link-footer {
     background-color: $footer-color ;
-    width: 206px;
+    // width: 206px;
     @media screen and (max-width: 479px) {
         margin-top: 60px;
         text-align: center;
@@ -102,9 +102,7 @@ footer {
         }
 }
 .social {
-    // padding: 0;
-    display: flex;
-    justify-content: space-between;
+    display: inline-flex;
     margin-right: -5px;
     margin-left: -5px;
 }
