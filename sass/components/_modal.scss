@@ -25,6 +25,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    overflow-y: scroll;
     @media screen and (max-width: 1199px){
         width: 100%;
         max-width: 450px;
@@ -163,16 +164,12 @@ textarea {
 }
 .check {
     margin-right: 7px;
-    // font-style: normal;
-    // font-weight: normal;
-    // font-size: 14px;
-    // line-height: 24px;
-    // letter-spacing: 0.03em;
-    color: #757575;
-    -webkit-appearance: none;
+   -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    display: none;
     position: absolute;
+    visibility: hidden;
 
     &:checked ~ .icon-check {
         background-image: url(./../images/check.svg);

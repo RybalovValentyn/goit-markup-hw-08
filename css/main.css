@@ -469,6 +469,7 @@ h3 {
   .main-nav.is-open {
     display: block;
     position: absolute;
+    z-index: 1;
     width: 100%;
     left: 0;
     top: 100%;
@@ -1852,6 +1853,7 @@ footer {
 }
 
 .works {
+  position: relative;
   display: block;
   height: 404px;
   -webkit-transition-property: -webkit-box-shadow;
@@ -2072,6 +2074,7 @@ footer {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  overflow-y: scroll;
   background-color: #FFFFFF;
   padding: 8px 8px 40px 40px;
 }
@@ -2226,11 +2229,12 @@ textarea:focus {
 
 .check {
   margin-right: 7px;
-  color: #757575;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  display: none;
   position: absolute;
+  visibility: hidden;
 }
 
 .check:checked ~ .icon-check {

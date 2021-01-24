@@ -1,8 +1,9 @@
 .portfolio-project {
-    background-color: $white-color;}
+    background-color: $white-color;
+    }
     
 .port-list {
-    
+    // position: relative;
         display: flex; 
         justify-content: center;  
         border-top: 1px solid #ECECEC;
@@ -64,6 +65,7 @@ border: none;}
 }
 
 .works-list {
+    
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
@@ -94,6 +96,7 @@ border: none;}
             }
   }
 .works {
+    position: relative;
     display: block;
     height: 404px;
     // width: 370px;
@@ -133,10 +136,11 @@ border: none;}
     }
     &:focus .overlay {
         bottom: 0;
-    }
+    }       
 
 }
 .work-link {
+    
     margin: 15px;
    height: 404px;
    border: 1px solid #EEEEEE;
