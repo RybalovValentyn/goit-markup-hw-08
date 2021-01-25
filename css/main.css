@@ -1616,7 +1616,7 @@ footer {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .form-footer {
-    width: 482px;
+    width: 100%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -2297,6 +2297,7 @@ textarea:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 32px;
 }
 
 .button-modal-submit {
