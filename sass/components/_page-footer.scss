@@ -1,10 +1,14 @@
 footer {
     background-color: $footer-color;
     width: 100% ;
-   &>.container{ @media screen and (min-width: 1200px){
+   &>.container  { @media screen and (min-width: 1200px){
         display: flex;
         justify-content: space-between;
-          }}
+                  }}
+}
+.container.desktop {
+    
+     padding: 60px 15px;
 }
 .footer-container {
     color: $white-color;
@@ -108,8 +112,6 @@ footer {
 }
 
 .social-footer {
-    margin-right: 5px;
-    margin-left: 5px;
     background-color: rgba(255, 255, 255, 0.1);
     fill: $white-color;
 }
