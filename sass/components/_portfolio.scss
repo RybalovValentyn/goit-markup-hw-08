@@ -12,6 +12,7 @@
         margin: 0;
         margin-left: auto;
         margin-right: auto;
+
         @media screen and (max-width: 767px) {
             width: 100%;
             padding-top: 60px;
@@ -25,6 +26,9 @@
             @media screen and(min-width: 768px) and (max-width:1199px){
                 width: 768px;
                 padding-bottom: 30px;
+                & li:last-child {
+                    margin-right: 0;
+                }
           }
             
             @media screen and (min-width: 1200px){
@@ -39,7 +43,8 @@
         margin-right: 8px;
         padding-left: 22px;
         padding-right: 22px;
-        height: 38px;
+        padding-top: 6px;
+        padding-bottom: 6px;
         background-color: #F5F4FA;
         color: var(--link-color);
         border: none;
@@ -49,6 +54,7 @@
         line-height: 26px;
         text-align: center;
         letter-spacing: 0.03em;
+
     
         transition-property: background-color, color;
         transition-duration: 250ms;
